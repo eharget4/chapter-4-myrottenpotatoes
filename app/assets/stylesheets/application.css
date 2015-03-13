@@ -65,11 +65,18 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
+table#movies th.hilite {
+  background-color: yellow;
+}
 #notice, #warning {
   background: rosybrown;
   margin: 1em 0;
   padding: 4px;
 }
+flash-message {
+	color: red
+	text-align: center
+}	
 form label {
   display: block;
   line-height: 25px;
