@@ -74,8 +74,8 @@ table#movies th.hilite {
   padding: 4px;
 }
 flash-message {
-	color: red
-	text-align: center
+	color: red;
+	text-align: center;
 }	
 form label {
   display: block;
