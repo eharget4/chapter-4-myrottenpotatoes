@@ -1,13 +1,13 @@
 # This file is app/controllers/movies_controller.rb
 class MoviesController < ApplicationController
   def index
-		@movie = Movie.all
-    if params[:commit] == 'Refresh'
-      session[:ratings] = params[:ratings]
-    elsif session[:ratings] != params[:ratings]
-      redirect = true
-      params[:ratings] = session[:ratings]
-    end
+		# if params[:commit] == 'Refresh'
+     # session[:ratings] = params[:ratings]
+    #elsif session[:ratings] != params[:ratings]
+      #redirect = true
+     # params[:ratings] = session[:ratings]
+    #end
+		session[:ratings] = params[:ratings] if params[:ratings]
 
     if params[:orderby]
       session[:orderby] = params[:orderby]
